@@ -108,4 +108,4 @@ Error generating stack: `+o.message+`
     color: #FFFFFF;
 `,iv=()=>V(uv,{children:new Date().getFullYear()}),uv=mn.span`
     margin-left: 4px;
-`,sv=()=>un(ov,{children:["Footer ",V(iv,{})]}),av=()=>V("div",{className:"wrapper",children:"Shop"}),cv=()=>V("div",{className:"wrapper",children:"Cart"});function fv(){return un("div",{className:"app-container",children:[un(Gm,{children:[V(lv,{}),un(Wm,{children:[V(ou,{path:"/",element:V(av,{})}),V(ou,{path:"/cart",element:V(cv,{})})]})]}),V(sv,{})]})}ci.createRoot(document.getElementById("root")).render(V(xt.StrictMode,{children:V(fv,{})}));
+`,sv=()=>un(ov,{children:["Footer ",V(iv,{})]}),av=()=>V("div",{className:"wrapper",children:"Shop"}),cv=()=>V("div",{className:"wrapper",children:"Cart"});function fv(){return un("div",{className:"app-container",children:[un(Gm,{children:[V(lv,{}),un(Wm,{children:[V(ou,{path:"/e-commerce-react/",element:V(av,{})}),V(ou,{path:"/e-commerce-react/cart",element:V(cv,{})})]})]}),V(sv,{})]})}ci.createRoot(document.getElementById("root")).render(V(xt.StrictMode,{children:V(fv,{})}));
