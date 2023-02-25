@@ -17,7 +17,8 @@
     "react-dom": "^18.2.0",
     "react-filter-search": "^1.1.11",
     "react-icons": "^4.7.1",
-    "react-router-dom": "^6.8.1"
+    "react-router-dom": "^6.8.1",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
