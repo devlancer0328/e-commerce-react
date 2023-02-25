@@ -98,7 +98,7 @@ Error generating stack: `+o.message+`
 `,rv=mn.div`
     display: flex;
     flex-direction: row;
-`,lv=()=>V(b0,{children:un(ev,{children:[V(tv,{children:V(nv,{to:"./",children:"Shop"})}),V(rv,{children:V(ad,{to:"./cart",children:V(e0,{style:{fontSize:"24px",filter:"invert(100%)"}})})})]})}),ov=mn.div`
+`,lv=()=>V(b0,{children:un(ev,{children:[V(tv,{children:V(nv,{to:"/e-commerce-react/",children:"Shop"})}),V(rv,{children:V(ad,{to:"/e-commerce-react/cart",children:V(e0,{style:{fontSize:"24px",filter:"invert(100%)"}})})})]})}),ov=mn.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
