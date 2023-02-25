@@ -8,10 +8,10 @@ export const Header = () => {
     <HeaderContainer>
       <HeaderBar>
           <LogoContainer>
-              <StyledLink to='./'>Shop</StyledLink>
+              <StyledLink to='/e-commerce-react/'>Shop</StyledLink>
           </LogoContainer>
           <HeaderLinksContainer>
-              <Link to='./cart'>
+              <Link to='/e-commerce-react/cart'>
                   <GrCart 
                   style={{
                       fontSize: '24px',
