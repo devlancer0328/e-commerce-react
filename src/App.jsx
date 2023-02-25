@@ -12,8 +12,8 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path='/' element={<Shop />}/>
-          <Route path='/cart' element={<Cart />}/>
+          <Route path='/e-commerce-react/' element={<Shop />}/>
+          <Route path='/e-commerce-react/cart' element={<Cart />}/>
         </Routes>
       </Router>
       <Footer />
