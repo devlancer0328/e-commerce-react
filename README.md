@@ -12,9 +12,11 @@ E-commerce React Shop App
 Project was created with:
 * Vite
 
-Used technologies:
+Used technologies & tools:
 * JavaScript
 * React
+* styled-components
+* react-icons
 
 ## Publishing production version
 
