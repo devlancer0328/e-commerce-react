@@ -24,7 +24,12 @@ Use `npm run deploy` to publish a newest version on production
 
 ## Screenshots
 * Desktop version :computer:   
-  
+
+![Screenshot](./src/assets/screenshots/screenshot_desktop.png) 
+
+* Mobile version :iphone:   
+
+![Screenshot](./src/assets/screenshots/screenshot_mobile.png) 
 
 ## Live :star2:
 https://goldipl.github.io/e-commerce-react/
