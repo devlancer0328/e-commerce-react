@@ -1,5 +1,5 @@
 import React from 'react'
-import { ItemContainer, ImageContainer, TextContainer, IDContainer, NameContainer, PriceContainer } from './ItemStyles'
+import { ItemContainer, ImageContainer, TextContainer, IDContainer, NameContainer, PriceContainer, AddToCartBtn } from './ItemStyles'
 
 export const Item = ({id, itemName, price, itemImage}) => {
   return (
@@ -12,6 +12,7 @@ export const Item = ({id, itemName, price, itemImage}) => {
           <NameContainer>{itemName}</NameContainer>
           <PriceContainer>Cena: <strong>${price}</strong></PriceContainer>
         </TextContainer>
+        <AddToCartBtn>Add to cart</AddToCartBtn>
     </ItemContainer>
   )
 }

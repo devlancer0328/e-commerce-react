@@ -22,7 +22,7 @@ export const TextContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    bottom: 0;
+    bottom: 24px;
     left: 0;
     background-color: #FFFFFFDB;
     min-height: 52px;
@@ -62,3 +62,44 @@ export const PriceContainer = styled.div`
         font-size: 16px;
     }
 `; 
+
+export const AddToCartBtn = styled.button`
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    font-size: 14px;
+    width: 100%;
+    height: 24px;
+    z-index: 1;
+    border: none;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    font-weight: 600;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    &::after {
+        content: "";
+        background: #FFFFFFDB;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+    }
+    &:active::after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+    }
+    &:hover {
+        color: #000000;
+    }
+`;
