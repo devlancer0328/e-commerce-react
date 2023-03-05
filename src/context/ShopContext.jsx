@@ -10,7 +10,7 @@ export const ShopContextProvider = (props) => {
   }
 
   const removeItemFromCart = (itemid) => {
-    setCartItems((prev) => ({...prev, [itemid]: prev[itemid] - 1}))
+    setCartItems((prev) => ({...prev, [itemid]: prev[itemid] = 0 ? 0 : prev[itemid] - 1}))
   }
 
   const contextValue = {cartItems, addItemToCart, removeItemFromCart};
