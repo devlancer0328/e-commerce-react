@@ -1,15 +1,17 @@
 import React from 'react'
-import { ItemContainer } from './ItemStyles'
+import { ItemContainer, ImageContainer, TextContainer, IDContainer, NameContainer, PriceContainer } from './ItemStyles'
 
 export const Item = ({id, itemName, price, itemImage}) => {
   return (
     <ItemContainer>
-        <div>
+        <ImageContainer>
             <img src={itemImage} alt={itemName} width="200" height="280" />
-        </div>
-        <div>ID: {id}</div>
-        <div>{itemName}</div>
-        <div>Cena: {price} $</div>
+        </ImageContainer>
+        <IDContainer>ID: {id}</IDContainer>
+        <TextContainer>
+          <NameContainer>{itemName}</NameContainer>
+          <PriceContainer>Cena: <strong>${price}</strong></PriceContainer>
+        </TextContainer>
     </ItemContainer>
   )
 }
