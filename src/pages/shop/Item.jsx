@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { ItemContainer, ImageContainer, TextContainer, IDContainer, NameContainer, PriceContainer, AddToCartBtn } from './ItemStyles'
+import { ShopContext } from '../../context/ShopContext'
 
 export const Item = ({id, itemName, price, itemImage}) => {
+  const { addItemToCart } = useContext(ShopContext);
+
   return (
     <ItemContainer>
         <ImageContainer>
@@ -12,7 +15,7 @@ export const Item = ({id, itemName, price, itemImage}) => {
           <NameContainer>{itemName}</NameContainer>
           <PriceContainer>Cena: <strong>${price.toFixed(2)}</strong></PriceContainer>
         </TextContainer>
-        <AddToCartBtn>Add to cart</AddToCartBtn>
+        <AddToCartBtn onClick={() => addItemToCart(id)}>Add to cart</AddToCartBtn>
     </ItemContainer>
   )
 }
