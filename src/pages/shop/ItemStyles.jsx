@@ -22,7 +22,7 @@ export const TextContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    bottom: 24px;
+    bottom: 40px;
     left: 0;
     background-color: #FFFFFFDB;
     min-height: 52px;
@@ -70,7 +70,7 @@ export const AddToCartBtn = styled.button`
     align-items: center;   
     font-size: 14px;
     width: 100%;
-    height: 24px;
+    height: 40px;
     z-index: 1;
     border: none;
     background-color: #FF0000;
