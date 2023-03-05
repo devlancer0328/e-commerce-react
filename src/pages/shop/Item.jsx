@@ -10,7 +10,7 @@ export const Item = ({id, itemName, price, itemImage}) => {
         <IDContainer>ID: {id}</IDContainer>
         <TextContainer>
           <NameContainer>{itemName}</NameContainer>
-          <PriceContainer>Cena: <strong>${price}</strong></PriceContainer>
+          <PriceContainer>Cena: <strong>${price.toFixed(2)}</strong></PriceContainer>
         </TextContainer>
         <AddToCartBtn>Add to cart</AddToCartBtn>
     </ItemContainer>
