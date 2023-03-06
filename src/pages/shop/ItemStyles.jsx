@@ -104,3 +104,22 @@ export const AddToCartBtn = styled.button`
         color: #000000;
     }
 `;
+
+export const ItemsCounter = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    position: absolute;
+    bottom: -14px;
+    right: -9px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background: #BBBBBB;
+    font-weight: 600;
+    z-index: 2;
+    &:empty {
+        display: none;
+    }
+`; 
