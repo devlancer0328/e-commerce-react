@@ -9,7 +9,7 @@ export const Cart = () => {
   return (
     <div className='wrapper'>
       <div>
-        <h1>Cart Items:</h1>
+        <h1>Twój koszyk:</h1>
       </div>
       <div>
         {ITEMS.map((item) => {
