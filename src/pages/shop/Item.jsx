@@ -14,7 +14,7 @@ export const Item = ({id, itemName, price, itemImage}) => {
         <TextContainer>
           <NameContainer>{itemName}</NameContainer>
           <PriceContainer>Cena: <strong>${price.toFixed(2)}</strong></PriceContainer>
-          <ItemsCounter>{cartItems[id]}</ItemsCounter>
+          <ItemsCounter onChange={e => updateCartItemCount(Number(e.target.value), id)}>{cartItems[id]}</ItemsCounter>
         </TextContainer>
         <AddToCartBtn onClick={() => addItemToCart(id)}>Add to cart</AddToCartBtn>
     </ItemContainer>
