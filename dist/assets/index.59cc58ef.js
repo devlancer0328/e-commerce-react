@@ -98,7 +98,7 @@ Error generating stack: `+o.message+`
 `,iv=he.div`
     display: flex;
     flex-direction: row;
-`,uv=()=>j(nv,{children:De(rv,{children:[j(lv,{children:j(ov,{to:"/e-commerce-react/",children:"Shop"})}),j(iv,{children:j(cd,{to:"/e-commerce-react/cart",children:j(r0,{style:{fontSize:"24px",filter:"invert(100%)"}})})})]})}),av=he.div`
+`,uv=()=>j(nv,{children:De(rv,{children:[j(lv,{children:j(ov,{to:"/e-commerce-react/",children:"Shop"})}),j(iv,{children:j(cd,{to:"/e-commerce-react/cart",children:j(r0,{style:av})})})]})}),av={fontSize:"24px",filter:"invert(100%)"},sv=he.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -106,16 +106,16 @@ Error generating stack: `+o.message+`
     padding: 8px 0;
     background: linear-gradient(to left, #FF0000, #990000);
     color: #FFFFFF;
-`,sv=()=>j(cv,{children:new Date().getFullYear()}),cv=he.span`
+`,cv=()=>j(fv,{children:new Date().getFullYear()}),fv=he.span`
     margin-left: 4px;
-`,fv=()=>De(av,{children:["Footer ",j(sv,{})]}),dv=he.div`
+`,dv=()=>De(sv,{children:["Footer ",j(cv,{})]}),pv=he.div`
     display: flex;
     justify-content: center;
-`,pv=he.div`
+`,hv=he.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-`,hv="/e-commerce-react/assets/Book_01.6579f3b7.jpg",mv="/e-commerce-react/assets/Book_02.d16fd121.jpg",vv="/e-commerce-react/assets/Book_03.695a7651.jpg",gv="/e-commerce-react/assets/Book_04.9687535f.jpg",yv="/e-commerce-react/assets/Book_05.99363c95.jpg",wv="/e-commerce-react/assets/Book_06.58fe67af.jpg",Sv="/e-commerce-react/assets/Book_07.362a2716.jpg",kv="/e-commerce-react/assets/Book_08.896eb40f.jpg",xv="/e-commerce-react/assets/Book_09.e301571f.jpg",Cv="/e-commerce-react/assets/Book_10.e32d40ce.jpg",Ev="/e-commerce-react/assets/Book_11.06e9ef53.jpg",_v="/e-commerce-react/assets/Book_12.b776c9c6.jpg",Ed=[{id:1,itemName:"JavaScript od podstaw",price:45,itemImage:hv},{id:2,itemName:"JavaScript. Przewodnik",price:40,itemImage:mv},{id:3,itemName:"JavaScript. Zaawansowane zagadnienia",price:40,itemImage:vv},{id:4,itemName:"Zrozumie\u0107 JavaScript. Wydanie III",price:155,itemImage:gv},{id:5,itemName:"JS, jakiego jeszcze nie znasz",price:54.99,itemImage:yv},{id:6,itemName:"Java. Zadania z programowania",price:48.99,itemImage:wv},{id:7,itemName:"Java. Efektywne programowanie",price:99.99,itemImage:Sv},{id:8,itemName:"Java w 24 godziny",price:49.5,itemImage:kv},{id:9,itemName:"Java. Techniki zaawansowane. Wydanie XI",price:89.5,itemImage:xv},{id:10,itemName:"J\u0119zyk C++. Szko\u0142a programowania. Wydanie VI",price:59.99,itemImage:Cv},{id:11,itemName:"Python od podstaw",price:74.99,itemImage:Ev},{id:12,itemName:"Python. Kurs dla nauczycieli i student\xF3w",price:38.99,itemImage:_v}],Pv=he.div`
+`,mv="/e-commerce-react/assets/Book_01.6579f3b7.jpg",vv="/e-commerce-react/assets/Book_02.d16fd121.jpg",gv="/e-commerce-react/assets/Book_03.695a7651.jpg",yv="/e-commerce-react/assets/Book_04.9687535f.jpg",wv="/e-commerce-react/assets/Book_05.99363c95.jpg",Sv="/e-commerce-react/assets/Book_06.58fe67af.jpg",kv="/e-commerce-react/assets/Book_07.362a2716.jpg",xv="/e-commerce-react/assets/Book_08.896eb40f.jpg",Cv="/e-commerce-react/assets/Book_09.e301571f.jpg",Ev="/e-commerce-react/assets/Book_10.e32d40ce.jpg",_v="/e-commerce-react/assets/Book_11.06e9ef53.jpg",Pv="/e-commerce-react/assets/Book_12.b776c9c6.jpg",Ed=[{id:1,itemName:"JavaScript od podstaw",price:45,itemImage:mv},{id:2,itemName:"JavaScript. Przewodnik",price:40,itemImage:vv},{id:3,itemName:"JavaScript. Zaawansowane zagadnienia",price:40,itemImage:gv},{id:4,itemName:"Zrozumie\u0107 JavaScript. Wydanie III",price:155,itemImage:yv},{id:5,itemName:"JS, jakiego jeszcze nie znasz",price:54.99,itemImage:wv},{id:6,itemName:"Java. Zadania z programowania",price:48.99,itemImage:Sv},{id:7,itemName:"Java. Efektywne programowanie",price:99.99,itemImage:kv},{id:8,itemName:"Java w 24 godziny",price:49.5,itemImage:xv},{id:9,itemName:"Java. Techniki zaawansowane. Wydanie XI",price:89.5,itemImage:Cv},{id:10,itemName:"J\u0119zyk C++. Szko\u0142a programowania. Wydanie VI",price:59.99,itemImage:Ev},{id:11,itemName:"Python od podstaw",price:74.99,itemImage:_v},{id:12,itemName:"Python. Kurs dla nauczycieli i student\xF3w",price:38.99,itemImage:Pv}],Nv=he.div`
     position: relative;
     display: flex;
     flex-direction: column;
@@ -127,9 +127,9 @@ Error generating stack: `+o.message+`
         box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
         -webkit-box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
     }
-`,Nv=he.div`
-    display: flex;
 `,zv=he.div`
+    display: flex;
+`,Rv=he.div`
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -139,7 +139,7 @@ Error generating stack: `+o.message+`
     background-color: #FFFFFFDB;
     min-height: 52px;
     width: 100%;
-`,Rv=he.div`
+`,Tv=he.div`
     position: absolute;
     display: flex;
     justify-content: center;
@@ -150,14 +150,14 @@ Error generating stack: `+o.message+`
     padding: 4px;
     border-radius: 0 0 8px 0;
     background-color: #FFFFFFDB;
-`,Tv=he.div`
+`,Ov=he.div`
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 13px;
     padding: 8px;
-`,Ov=he.div`
+`,Iv=he.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,7 +167,7 @@ Error generating stack: `+o.message+`
     strong {
         font-size: 16px;
     }
-`,Iv=he.button`
+`,Lv=he.button`
     position: relative;
     display: flex;
     justify-content: center;
@@ -206,7 +206,7 @@ Error generating stack: `+o.message+`
     &:hover {
         color: #000000;
     }
-`,Lv=he.div`
+`,$v=he.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,13 +223,13 @@ Error generating stack: `+o.message+`
     &:empty {
         display: none;
     }
-`,ha=L.exports.createContext(null),$v=e=>{const[t,n]=L.exports.useState(0),i={cartItems:t,addItemToCart:u=>{n(a=>({...a,[u]:a[u]>0?a[u]+1:1}))},removeItemFromCart:u=>{n(a=>({...a,[u]:a[u]=a[u]-1}))},updateCartItemCount:(u,a)=>{n(s=>({...s,[a]:u}))}};return console.log(t),j(ha.Provider,{value:i,children:e.children})},_d=({id:e,itemName:t,price:n,itemImage:r})=>{const{addItemToCart:l,cartItems:o}=L.exports.useContext(ha);return De(Pv,{children:[j(Nv,{children:j("img",{src:r,alt:t,width:"200",height:"280"})}),De(Rv,{children:["ID: ",e]}),De(zv,{children:[j(Tv,{children:t}),De(Ov,{children:["Cena: ",De("strong",{children:["$",n.toFixed(2)]})]}),j(Lv,{onChange:i=>updateCartItemCount(Number(i.target.value),e),children:o[e]})]}),j(Iv,{onClick:()=>l(e),children:"Add to cart"})]})},jv=()=>De("div",{className:"wrapper shop",children:[j(dv,{children:j("h1",{children:"Ksi\u0105\u017Cki"})}),j(pv,{children:Ed.map(e=>j(_d,{...e},e.id))})]}),Fv=he.h1`
+`,ha=L.exports.createContext(null),jv=e=>{const[t,n]=L.exports.useState(0),i={cartItems:t,addItemToCart:u=>{n(a=>({...a,[u]:a[u]>0?a[u]+1:1}))},removeItemFromCart:u=>{n(a=>({...a,[u]:a[u]=a[u]-1}))},updateCartItemCount:(u,a)=>{n(s=>({...s,[a]:u}))}};return console.log(t),j(ha.Provider,{value:i,children:e.children})},_d=({id:e,itemName:t,price:n,itemImage:r})=>{const{addItemToCart:l,cartItems:o}=L.exports.useContext(ha);return De(Nv,{children:[j(zv,{children:j("img",{src:r,alt:t,width:"200",height:"280"})}),De(Tv,{children:["ID: ",e]}),De(Rv,{children:[j(Ov,{children:t}),De(Iv,{children:["Cena: ",De("strong",{children:["$",n.toFixed(2)]})]}),j($v,{onChange:i=>updateCartItemCount(Number(i.target.value),e),children:o[e]})]}),j(Lv,{onClick:()=>l(e),children:"Add to cart"})]})},Fv=()=>De("div",{className:"wrapper shop",children:[j(pv,{children:j("h1",{children:"Ksi\u0105\u017Cki"})}),j(hv,{children:Ed.map(e=>j(_d,{...e},e.id))})]}),Av=he.h1`
     display: flex;
     justify-content: center;
-`,Av=he.div`
+`,Mv=he.div`
     position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-`,Mv=()=>{const{cartItems:e}=L.exports.useContext(ha);return De("div",{className:"wrapper cart",children:[j(Fv,{children:"Tw\xF3j koszyk"}),j(Av,{children:Ed.map(t=>{if(e[t.id]!==0)return j(_d,{...t},t.id)})})]})};function Dv(){return j("div",{className:"app-container",children:De($v,{children:[De(Jm,{children:[j(uv,{}),De(Ym,{children:[j(ou,{path:"/e-commerce-react/",element:j(jv,{})}),j(ou,{path:"/e-commerce-react/cart",element:j(Mv,{})})]})]}),j(fv,{})]})})}ci.createRoot(document.getElementById("root")).render(j(Et.StrictMode,{children:j(Dv,{})}));
+`,Dv=()=>{const{cartItems:e}=L.exports.useContext(ha);return De("div",{className:"wrapper cart",children:[j(Av,{children:"Tw\xF3j koszyk"}),j(Mv,{children:Ed.map(t=>e.hasOwnProperty(t.id)&&e[t.id]!==0?j(_d,{...t},t.id):null)})]})};function Uv(){return j("div",{className:"app-container",children:De(jv,{children:[De(Jm,{children:[j(uv,{}),De(Ym,{children:[j(ou,{path:"/e-commerce-react/",element:j(Fv,{})}),j(ou,{path:"/e-commerce-react/cart",element:j(Dv,{})})]})]}),j(dv,{})]})})}ci.createRoot(document.getElementById("root")).render(j(Et.StrictMode,{children:j(Uv,{})}));
