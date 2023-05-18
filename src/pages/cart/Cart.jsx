@@ -11,12 +11,13 @@ export const Cart = () => {
     <div className='wrapper cart'>
       <Title>Twój koszyk</Title>
       <CartContainer>
-        {ITEMS.map((item) => {
-            if (cartItems[item.id] !== 0 ) {
-              return (
-                <Item key={item.id} {...item} />
-              )
-            }
+      {ITEMS.map((item) => {
+        if (cartItems.hasOwnProperty(item.id) && cartItems[item.id] !== 0 ) {
+          return (
+            <Item key={item.id} {...item} />
+          )
+        }
+        return null; // Handle case where item is not in cart
         })}
       </CartContainer>
     </div>
