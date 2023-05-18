@@ -12,12 +12,7 @@ export const Header = () => {
           </LogoContainer>
           <HeaderLinksContainer>
               <Link to='/e-commerce-react/cart'>
-                  <GrCart 
-                  style={{
-                      fontSize: '24px',
-                      filter: 'invert(100%)'
-                    }}
-                  />
+                  <GrCart style={CartButton} />
               </Link>
           </HeaderLinksContainer>
       </HeaderBar>
@@ -25,3 +20,7 @@ export const Header = () => {
   )
 }
 
+const CartButton = {
+  fontSize: '24px',
+  filter: 'invert(100%)'
+}
