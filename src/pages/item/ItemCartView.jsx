@@ -8,7 +8,7 @@ import {
   PriceCartContainer,
   ItemsCartCounter,
   RemoveFromTheCartBtnCart,
-} from "./ItemCartStyles";
+} from "./ItemCartViewStyles";
 import { ShopContext } from "../../context/ShopContext";
 
 export const ItemCartView = ({

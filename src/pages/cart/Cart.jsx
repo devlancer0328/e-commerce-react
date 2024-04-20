@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
 import { ITEMS } from "../../data/items";
-import { ItemCartView } from "../shop/ItemCartView";
+import { ItemCartView } from "../item/ItemCartView";
 import { CartContainer, Title } from "./CartStyles";
 
 export const Cart = () => {

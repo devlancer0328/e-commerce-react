@@ -1,11 +1,11 @@
-import React from 'react'
-import { ShopTitle, ShopProducts } from './ShopStyles'
-import { ITEMS } from './../../data/items'
-import { Item } from './Item'
+import React from "react";
+import { ShopTitle, ShopProducts } from "./ShopStyles";
+import { ITEMS } from "./../../data/items";
+import { Item } from "../item/Item";
 
 export const Shop = () => {
   return (
-    <div className='wrapper shop'>
+    <div className="wrapper shop">
       <ShopTitle>
         <h1>Książki</h1>
       </ShopTitle>
@@ -15,5 +15,5 @@ export const Shop = () => {
         ))}
       </ShopProducts>
     </div>
-  )
-}
+  );
+};
