@@ -18,8 +18,7 @@ export const ItemCartView = ({
   itemImage,
   summaryPrice,
 }) => {
-  const { cartItems } = useContext(ShopContext);
-  const { removeItemFromCart } = useContext(ShopContext);
+  const { cartItems, removeItemFromCart } = useContext(ShopContext);
 
   return (
     <ItemCartContainer>

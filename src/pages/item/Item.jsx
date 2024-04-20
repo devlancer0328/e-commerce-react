@@ -13,8 +13,8 @@ import {
 import { ShopContext } from "../../context/ShopContext";
 
 export const Item = ({ id, itemName, price, itemImage }) => {
-  const { addItemToCart, cartItems } = useContext(ShopContext);
-  const { removeItemFromCart } = useContext(ShopContext);
+  const { addItemToCart, cartItems, removeItemFromCart } =
+    useContext(ShopContext);
 
   return (
     <ItemContainer>
