@@ -25,10 +25,15 @@ export const Item = ({ id, itemName, price, itemImage }) => {
       <TextContainer>
         <NameContainer>{itemName}</NameContainer>
         <PriceContainer>
-          Cena: <strong>${price.toFixed(2)}</strong>
+          Price: <strong>${price.toFixed(2)}</strong>
         </PriceContainer>
         <ItemsCounter
           onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
+          style={{
+            display: cartItems[id] === 0 ? "none" : "flex",
+            backgroundColor:
+              cartItems[id] > 0 ? "#bbbbbb" : "rgba(255,255,255,0)",
+          }}
         >
           {cartItems[id]}
         </ItemsCounter>
