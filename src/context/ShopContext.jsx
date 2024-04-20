@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState, useEffect } from "react";
 
 export const ShopContext = createContext(null);
 
@@ -9,30 +9,53 @@ export const ShopContext = createContext(null);
  */
 export const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(0);
+  const [totalQuantity, setTotalQuantity] = useState(0);
 
-/**
- * If the itemid is in the cartItems object, increment the value by 1, otherwise set the value to 1.
- */
+  /**
+   * If the itemid is in the cartItems object, increment the value by 1, otherwise set the value to 1.
+   */
   const addItemToCart = (itemid) => {
-    setCartItems((prev) => ({...prev, [itemid]: prev[itemid] > 0 ? prev[itemid] + 1 : 1 }))
-  }
+    setCartItems((prev) => ({
+      ...prev,
+      [itemid]: prev[itemid] > 0 ? prev[itemid] + 1 : 1,
+    }));
+  };
 
-/**
- * If the itemid is 0, set it to 0, otherwise subtract 1 from it.
- */
+  /**
+   * If the itemid is 0, set it to 0, otherwise subtract 1 from it.
+   */
   const removeItemFromCart = (itemid) => {
-    setCartItems((prev) => ({...prev, [itemid]: prev[itemid] = 0 ? 0 : prev[itemid] - 1}))
-  }
+    setCartItems((prev) => ({
+      ...prev,
+      [itemid]: (prev[itemid] = 0 ? 0 : prev[itemid] - 1),
+    }));
+  };
 
   const updateCartItemCount = (newAmount, itemid) => {
-    setCartItems((prev) => ({...prev, [itemid]: newAmount }))
-  }
+    setCartItems((prev) => ({ ...prev, [itemid]: newAmount }));
+  };
 
-  const contextValue = {cartItems, addItemToCart, removeItemFromCart, updateCartItemCount};
-  console.log(cartItems)
+  // Update total quantity whenever cart items change
+  useEffect(() => {
+    const newTotalQuantity = Object.values(cartItems).reduce(
+      (acc, curr) => acc + curr,
+      0
+    );
+    setTotalQuantity(newTotalQuantity);
+  }, [cartItems]);
+
+  const contextValue = {
+    cartItems,
+    addItemToCart,
+    removeItemFromCart,
+    updateCartItemCount,
+    totalQuantity,
+  };
+  console.log(cartItems);
 
   return (
-
-    <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>
-  )
-}
+    <ShopContext.Provider value={contextValue}>
+      {props.children}
+    </ShopContext.Provider>
+  );
+};
