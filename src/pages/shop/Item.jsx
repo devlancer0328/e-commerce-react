@@ -14,7 +14,7 @@ import { ShopContext } from "../../context/ShopContext";
 
 export const Item = ({ id, itemName, price, itemImage }) => {
   const { addItemToCart, cartItems } = useContext(ShopContext);
-  const { removeItemFromCart, setRemoveItemFromCart } = useContext(ShopContext);
+  const { removeItemFromCart } = useContext(ShopContext);
 
   return (
     <ItemContainer>
