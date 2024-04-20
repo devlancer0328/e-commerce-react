@@ -1,11 +1,17 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
 import { ITEMS } from "../../data/items";
-import { Item } from "../shop/Item";
+import { ItemCartView } from "../shop/ItemCartView";
 import { CartContainer, Title } from "./CartStyles";
 
 export const Cart = () => {
   const { cartItems } = useContext(ShopContext);
+
+  // Function to calculate the summary price for each item
+  const calculateItemSummaryPrice = (item) => {
+    const quantity = cartItems[item.id];
+    return quantity * item.price;
+  };
 
   // Calculate total quantity of items in the cart
   const totalQuantity = Object.values(cartItems).reduce(
@@ -19,7 +25,14 @@ export const Cart = () => {
       <CartContainer>
         {ITEMS.map((item) => {
           if (cartItems.hasOwnProperty(item.id) && cartItems[item.id] !== 0) {
-            return <Item key={item.id} {...item} />;
+            const summaryPrice = calculateItemSummaryPrice(item);
+            return (
+              <ItemCartView
+                key={item.id}
+                {...item}
+                summaryPrice={summaryPrice}
+              />
+            );
           }
           return null; // Handle case where item is not in cart
         })}
