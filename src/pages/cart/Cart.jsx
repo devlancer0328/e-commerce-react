@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
 import { ITEMS } from "../../data/items";
 import { ItemCartView } from "../item/ItemCartView";
-import { CartContainer, Title } from "./CartStyles";
+import { CartContainer, Title, TotalSummaryContainer } from "./CartStyles";
 
 export const Cart = () => {
   const { cartItems } = useContext(ShopContext);
@@ -18,6 +18,15 @@ export const Cart = () => {
     (acc, curr) => acc + curr,
     0
   );
+
+  // Calculate the total sum of summary prices
+  const totalSummaryPrice = ITEMS.reduce((acc, item) => {
+    if (cartItems.hasOwnProperty(item.id) && cartItems[item.id] !== 0) {
+      const summaryPrice = calculateItemSummaryPrice(item);
+      return acc + summaryPrice;
+    }
+    return acc;
+  }, 0);
 
   return (
     <div className="wrapper cart">
@@ -37,7 +46,14 @@ export const Cart = () => {
           return null; // Handle case where item is not in cart
         })}
       </CartContainer>
-      <p>Total Quantity: {totalQuantity}</p>
+      <TotalSummaryContainer>
+        <p>
+          Total Quantity: <strong>{totalQuantity}</strong>
+        </p>
+        <p>
+          Total Summary Price: <strong>${totalSummaryPrice}</strong>
+        </p>
+      </TotalSummaryContainer>
     </div>
   );
 };
