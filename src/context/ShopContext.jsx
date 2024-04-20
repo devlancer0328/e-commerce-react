@@ -51,7 +51,6 @@ export const ShopContextProvider = (props) => {
     updateCartItemCount,
     totalQuantity,
   };
-  console.log(cartItems);
 
   return (
     <ShopContext.Provider value={contextValue}>
