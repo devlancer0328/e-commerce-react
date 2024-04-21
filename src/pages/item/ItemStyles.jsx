@@ -23,7 +23,7 @@ export const TextContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  bottom: 80px;
+  bottom: 40px;
   left: 0;
   background-color: #ffffffdb;
   min-height: 52px;
