@@ -18,7 +18,7 @@ export const Header = () => {
     <HeaderContainer>
       <HeaderBar>
         <LogoContainer>
-          <StyledLink to="/e-commerce-react/">Shop</StyledLink>
+          <StyledLink to="/e-commerce-react/">BuyIt</StyledLink>
         </LogoContainer>
         <HeaderLinksContainer>
           <Link to="/e-commerce-react/cart">
