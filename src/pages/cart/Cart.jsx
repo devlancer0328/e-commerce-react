@@ -32,19 +32,23 @@ export const Cart = () => {
     <div className="wrapper cart">
       <Title>Cart</Title>
       <CartContainer>
-        {BOOKS.map((item) => {
-          if (cartItems.hasOwnProperty(item.id) && cartItems[item.id] !== 0) {
-            const summaryPrice = calculateItemSummaryPrice(item);
-            return (
-              <ItemCartView
-                key={item.id}
-                {...item}
-                summaryPrice={summaryPrice}
-              />
-            );
-          }
-          return null; // Handle case where item is not in cart
-        })}
+        {Object.keys(cartItems).length === 0 ? (
+          <p>Your cart is empty</p>
+        ) : (
+          BOOKS.map((item) => {
+            if (cartItems.hasOwnProperty(item.id) && cartItems[item.id] !== 0) {
+              const summaryPrice = calculateItemSummaryPrice(item);
+              return (
+                <ItemCartView
+                  key={item.id}
+                  {...item}
+                  summaryPrice={summaryPrice}
+                />
+              );
+            }
+            return null;
+          })
+        )}
       </CartContainer>
       <TotalSummaryContainer>
         <p>
