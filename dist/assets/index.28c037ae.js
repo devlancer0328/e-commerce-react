@@ -114,7 +114,7 @@ Error generating stack: `+l.message+`
   &:empty {
     display: none;
   }
-`,Yr=$.exports.createContext(null),av=e=>{const[t,n]=$.exports.useState(0),[r,o]=$.exports.useState(0),l=s=>{n(p=>({...p,[s]:p[s]>0?p[s]+1:1}))},i=s=>{n(p=>({...p,[s]:p[s]>0?p[s]-1:0}))},u=(s,p)=>{n(h=>({...h,[p]:s}))};$.exports.useEffect(()=>{const s=Object.values(t).reduce((p,h)=>p+h,0);o(s)},[t]);const a={cartItems:t,addItemToCart:l,removeItemFromCart:i,updateCartItemCount:u,totalQuantity:r};return L(Yr.Provider,{value:a,children:e.children})},sv=()=>{const{totalQuantity:e}=$.exports.useContext(Yr);return L(nv,{children:b(rv,{children:[L(ov,{children:L(lv,{to:"/e-commerce-react/",children:"Shop"})}),L(iv,{children:b(dd,{to:"/e-commerce-react/cart",children:[L(r0,{style:cv}),L(uv,{children:e})]})})]})})},cv={fontSize:"24px",filter:"invert(100%)"},fv=G.div`
+`,Yr=$.exports.createContext(null),av=e=>{const[t,n]=$.exports.useState(0),[r,o]=$.exports.useState(0),l=s=>{n(p=>({...p,[s]:p[s]>0?p[s]+1:1}))},i=s=>{n(p=>({...p,[s]:p[s]>0?p[s]-1:0}))},u=(s,p)=>{n(h=>({...h,[p]:s}))};$.exports.useEffect(()=>{const s=Object.values(t).reduce((p,h)=>p+h,0);o(s)},[t]);const a={cartItems:t,addItemToCart:l,removeItemFromCart:i,updateCartItemCount:u,totalQuantity:r};return L(Yr.Provider,{value:a,children:e.children})},sv="/e-commerce-react/assets/BuyIT-logo-transparent.063f159c.png",cv=()=>{const{totalQuantity:e}=$.exports.useContext(Yr);return L(nv,{children:b(rv,{children:[L(ov,{children:L(lv,{to:"/e-commerce-react/",children:L("img",{src:sv,alt:"BuyIt Logo",width:112,height:56})})}),L(iv,{children:b(dd,{to:"/e-commerce-react/cart",children:[L(r0,{style:fv}),L(uv,{children:e})]})})]})})},fv={fontSize:"24px",filter:"invert(100%)"},dv=G.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -122,16 +122,16 @@ Error generating stack: `+l.message+`
     padding: 8px 0;
     background: linear-gradient(to left, #FF0000, #990000);
     color: #FFFFFF;
-`,dv=()=>L(pv,{children:new Date().getFullYear()}),pv=G.span`
+`,pv=()=>L(hv,{children:new Date().getFullYear()}),hv=G.span`
     margin-left: 4px;
-`,hv=()=>b(fv,{children:["Footer ",L(dv,{})]}),mv=G.div`
+`,mv=()=>b(dv,{children:["Footer ",L(pv,{})]}),vv=G.div`
     display: flex;
     justify-content: center;
-`,vv=G.div`
+`,gv=G.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-`,gv="/e-commerce-react/assets/Book_01.6579f3b7.jpg",yv="/e-commerce-react/assets/Book_02.d16fd121.jpg",wv="/e-commerce-react/assets/Book_03.695a7651.jpg",Sv="/e-commerce-react/assets/Book_04.9687535f.jpg",xv="/e-commerce-react/assets/Book_05.99363c95.jpg",kv="/e-commerce-react/assets/Book_06.58fe67af.jpg",Cv="/e-commerce-react/assets/Book_07.362a2716.jpg",Ev="/e-commerce-react/assets/Book_08.896eb40f.jpg",Pv="/e-commerce-react/assets/Book_09.e301571f.jpg",_v="/e-commerce-react/assets/Book_10.e32d40ce.jpg",Nv="/e-commerce-react/assets/Book_11.06e9ef53.jpg",zv="/e-commerce-react/assets/Book_12.b776c9c6.jpg",pu=[{id:1,itemName:"JavaScript od podstaw",price:45,itemImage:gv},{id:2,itemName:"JavaScript. Przewodnik",price:40,itemImage:yv},{id:3,itemName:"JavaScript. Zaawansowane zagadnienia",price:40,itemImage:wv},{id:4,itemName:"Zrozumie\u0107 JavaScript. Wydanie III",price:155,itemImage:Sv},{id:5,itemName:"JS, jakiego jeszcze nie znasz",price:54.99,itemImage:xv},{id:6,itemName:"Java. Zadania z programowania",price:48.99,itemImage:kv},{id:7,itemName:"Java. Efektywne programowanie",price:99.99,itemImage:Cv},{id:8,itemName:"Java w 24 godziny",price:49.5,itemImage:Ev},{id:9,itemName:"Java. Techniki zaawansowane. Wydanie XI",price:89.5,itemImage:Pv},{id:10,itemName:"J\u0119zyk C++. Szko\u0142a programowania. Wydanie VI",price:59.99,itemImage:_v},{id:11,itemName:"Python od podstaw",price:74.99,itemImage:Nv},{id:12,itemName:"Python. Kurs dla nauczycieli i student\xF3w",price:38.99,itemImage:zv}],Rv=G.div`
+`,yv="/e-commerce-react/assets/Book_01.6579f3b7.jpg",wv="/e-commerce-react/assets/Book_02.d16fd121.jpg",Sv="/e-commerce-react/assets/Book_03.695a7651.jpg",xv="/e-commerce-react/assets/Book_04.9687535f.jpg",kv="/e-commerce-react/assets/Book_05.99363c95.jpg",Cv="/e-commerce-react/assets/Book_06.58fe67af.jpg",Ev="/e-commerce-react/assets/Book_07.362a2716.jpg",Pv="/e-commerce-react/assets/Book_08.896eb40f.jpg",_v="/e-commerce-react/assets/Book_09.e301571f.jpg",Nv="/e-commerce-react/assets/Book_10.e32d40ce.jpg",zv="/e-commerce-react/assets/Book_11.06e9ef53.jpg",Rv="/e-commerce-react/assets/Book_12.b776c9c6.jpg",pu=[{id:1,itemName:"JavaScript od podstaw",price:45,itemImage:yv},{id:2,itemName:"JavaScript. Przewodnik",price:40,itemImage:wv},{id:3,itemName:"JavaScript. Zaawansowane zagadnienia",price:40,itemImage:Sv},{id:4,itemName:"Zrozumie\u0107 JavaScript. Wydanie III",price:155,itemImage:xv},{id:5,itemName:"JS, jakiego jeszcze nie znasz",price:54.99,itemImage:kv},{id:6,itemName:"Java. Zadania z programowania",price:48.99,itemImage:Cv},{id:7,itemName:"Java. Efektywne programowanie",price:99.99,itemImage:Ev},{id:8,itemName:"Java w 24 godziny",price:49.5,itemImage:Pv},{id:9,itemName:"Java. Techniki zaawansowane. Wydanie XI",price:89.5,itemImage:_v},{id:10,itemName:"J\u0119zyk C++. Szko\u0142a programowania. Wydanie VI",price:59.99,itemImage:Nv},{id:11,itemName:"Python od podstaw",price:74.99,itemImage:zv},{id:12,itemName:"Python. Kurs dla nauczycieli i student\xF3w",price:38.99,itemImage:Rv}],Tv=G.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -143,9 +143,9 @@ Error generating stack: `+l.message+`
     box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
     -webkit-box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
   }
-`,Tv=G.div`
-  display: flex;
 `,Iv=G.div`
+  display: flex;
+`,Ov=G.div`
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -155,7 +155,7 @@ Error generating stack: `+l.message+`
   background-color: #ffffffdb;
   min-height: 52px;
   width: 100%;
-`,Ov=G.div`
+`,Lv=G.div`
   position: absolute;
   display: flex;
   justify-content: center;
@@ -166,14 +166,14 @@ Error generating stack: `+l.message+`
   padding: 4px;
   border-radius: 0 0 8px 0;
   background-color: #ffffffdb;
-`,Lv=G.div`
+`,$v=G.div`
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 13px;
   padding: 8px;
-`,$v=G.div`
+`,jv=G.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,7 +183,7 @@ Error generating stack: `+l.message+`
   strong {
     font-size: 16px;
   }
-`,jv=G.button`
+`,Av=G.button`
   position: relative;
   display: flex;
   justify-content: center;
@@ -222,7 +222,7 @@ Error generating stack: `+l.message+`
   &:hover {
     color: #000000;
   }
-`,Av=G.button`
+`,Mv=G.button`
   position: relative;
   display: flex;
   justify-content: center;
@@ -262,7 +262,7 @@ Error generating stack: `+l.message+`
   &:hover {
     color: #000000;
   }
-`,Mv=G.div`
+`,Dv=G.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,7 +279,7 @@ Error generating stack: `+l.message+`
   &:empty {
     display: none;
   }
-`,Dv=({id:e,itemName:t,price:n,itemImage:r})=>{const{addItemToCart:o,cartItems:l,removeItemFromCart:i}=$.exports.useContext(Yr);return b(Rv,{children:[L(Tv,{children:L("img",{src:r,alt:t,width:"200",height:"280"})}),b(Ov,{children:["ID: ",e]}),b(Iv,{children:[L(Lv,{children:t}),b($v,{children:["Price: ",b("strong",{children:["$",n.toFixed(2)]})]}),L(Mv,{onChange:u=>updateCartItemCount(Number(u.target.value),e),style:{display:l[e]===0?"none":"flex",backgroundColor:l[e]>0?"#bbbbbb":"rgba(255,255,255,0)"},children:l[e]})]}),L(jv,{onClick:()=>o(e),children:"Add to cart"}),L(Av,{onClick:()=>i(e),children:"Remove from the cart"})]})},Fv=()=>b("div",{className:"wrapper shop",children:[L(mv,{children:L("h1",{children:"Ksi\u0105\u017Cki"})}),L(vv,{children:pu.map(e=>L(Dv,{...e},e.id))})]}),Uv=G.div`
+`,Fv=({id:e,itemName:t,price:n,itemImage:r})=>{const{addItemToCart:o,cartItems:l,removeItemFromCart:i}=$.exports.useContext(Yr);return b(Tv,{children:[L(Iv,{children:L("img",{src:r,alt:t,width:"200",height:"280"})}),b(Lv,{children:["ID: ",e]}),b(Ov,{children:[L($v,{children:t}),b(jv,{children:["Price: ",b("strong",{children:["$",n.toFixed(2)]})]}),L(Dv,{onChange:u=>updateCartItemCount(Number(u.target.value),e),style:{display:l[e]===0?"none":"flex",backgroundColor:l[e]>0?"#bbbbbb":"rgba(255,255,255,0)"},children:l[e]})]}),L(Av,{onClick:()=>o(e),children:"Add to cart"}),L(Mv,{onClick:()=>i(e),children:"Remove from the cart"})]})},Uv=()=>b("div",{className:"wrapper shop",children:[L(vv,{children:L("h1",{children:"Ksi\u0105\u017Cki"})}),L(gv,{children:pu.map(e=>L(Fv,{...e},e.id))})]}),Bv=G.div`
   position: relative;
   display: flex;
   flex-direction: row;
@@ -295,9 +295,9 @@ Error generating stack: `+l.message+`
   @media (max-width: 800px) {
     flex-direction: column;
   }
-`,Bv=G.div`
-  display: flex;
 `,Vv=G.div`
+  display: flex;
+`,Wv=G.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -310,7 +310,7 @@ Error generating stack: `+l.message+`
     flex-direction: column;
     gap: 8px;
   }
-`,Wv=G.div`
+`,Hv=G.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,7 +323,7 @@ Error generating stack: `+l.message+`
   @media (max-width: 800px) {
     margin: 8px 0;
   }
-`,Hv=G.div`
+`,Qv=G.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -341,7 +341,7 @@ Error generating stack: `+l.message+`
   strong {
     font-size: 16px;
   }
-`,Qv=G.button`
+`,Yv=G.button`
   position: relative;
   display: flex;
   justify-content: center;
@@ -382,7 +382,7 @@ Error generating stack: `+l.message+`
   &:hover {
     color: #000000;
   }
-`,Yv=G.div`
+`,Kv=G.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -400,19 +400,19 @@ Error generating stack: `+l.message+`
   @media (max-width: 800px) {
     margin: 8px 0;
   }
-`,Kv=({id:e,itemName:t,price:n,itemImage:r,summaryPrice:o})=>{const{cartItems:l,removeItemFromCart:i}=$.exports.useContext(Yr);return b(Uv,{children:[L(Bv,{children:L("img",{src:r,alt:t,width:"200",height:"280"})}),b(Wv,{children:["ID: ",e]}),b(Vv,{children:[L(Hv,{children:t}),b(Qs,{children:["Price: ",b("strong",{children:["$",n.toFixed(2)]})]}),b(Qs,{children:["Summary Price: ",b("strong",{children:["$",o]})]}),L(Yv,{onChange:u=>updateCartItemCount(Number(u.target.value),e),style:{display:l[e]===0?"none":"flex",backgroundColor:l[e]>0?"#bbbbbb":"rgba(255,255,255,0)"},children:l[e]})]}),L(Qv,{onClick:()=>i(e),children:"Remove from the cart"})]})},Gv=G.h1`
+`,Gv=({id:e,itemName:t,price:n,itemImage:r,summaryPrice:o})=>{const{cartItems:l,removeItemFromCart:i}=$.exports.useContext(Yr);return b(Bv,{children:[L(Vv,{children:L("img",{src:r,alt:t,width:"200",height:"280"})}),b(Hv,{children:["ID: ",e]}),b(Wv,{children:[L(Qv,{children:t}),b(Qs,{children:["Price: ",b("strong",{children:["$",n.toFixed(2)]})]}),b(Qs,{children:["Summary Price: ",b("strong",{children:["$",o]})]}),L(Kv,{onChange:u=>updateCartItemCount(Number(u.target.value),e),style:{display:l[e]===0?"none":"flex",backgroundColor:l[e]>0?"#bbbbbb":"rgba(255,255,255,0)"},children:l[e]})]}),L(Yv,{onClick:()=>i(e),children:"Remove from the cart"})]})},Xv=G.h1`
   display: flex;
   justify-content: center;
-`,Xv=G.div`
+`,Zv=G.div`
   position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-`,Zv=G.div`
+`,Jv=G.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
   width: 100%;
-`,Jv=()=>{const{cartItems:e}=$.exports.useContext(Yr),t=o=>e[o.id]*o.price,n=Object.values(e).reduce((o,l)=>o+l,0),r=pu.reduce((o,l)=>{if(e.hasOwnProperty(l.id)&&e[l.id]!==0){const i=t(l);return o+i}return o},0);return b("div",{className:"wrapper cart",children:[L(Gv,{children:"Tw\xF3j koszyk"}),L(Xv,{children:pu.map(o=>{if(e.hasOwnProperty(o.id)&&e[o.id]!==0){const l=t(o);return L(Kv,{...o,summaryPrice:l},o.id)}return null})}),b(Zv,{children:[b("p",{children:["Total Quantity: ",L("strong",{children:n})]}),b("p",{children:["Total Summary Price: ",b("strong",{children:["$",r]})]})]})]})};function qv(){return L("div",{className:"app-container",children:b(av,{children:[b(Jm,{children:[L(sv,{}),b(Ym,{children:[L(iu,{path:"/e-commerce-react/",element:L(Fv,{})}),L(iu,{path:"/e-commerce-react/cart",element:L(Jv,{})})]})]}),L(hv,{})]})})}fi.createRoot(document.getElementById("root")).render(L(Et.StrictMode,{children:L(qv,{})}));
+`,qv=()=>{const{cartItems:e}=$.exports.useContext(Yr),t=o=>e[o.id]*o.price,n=Object.values(e).reduce((o,l)=>o+l,0),r=pu.reduce((o,l)=>{if(e.hasOwnProperty(l.id)&&e[l.id]!==0){const i=t(l);return o+i}return o},0);return b("div",{className:"wrapper cart",children:[L(Xv,{children:"Tw\xF3j koszyk"}),L(Zv,{children:pu.map(o=>{if(e.hasOwnProperty(o.id)&&e[o.id]!==0){const l=t(o);return L(Gv,{...o,summaryPrice:l},o.id)}return null})}),b(Jv,{children:[b("p",{children:["Total Quantity: ",L("strong",{children:n})]}),b("p",{children:["Total Summary Price: ",b("strong",{children:["$",r]})]})]})]})};function bv(){return L("div",{className:"app-container",children:b(av,{children:[b(Jm,{children:[L(cv,{}),b(Ym,{children:[L(iu,{path:"/e-commerce-react/",element:L(Uv,{})}),L(iu,{path:"/e-commerce-react/cart",element:L(qv,{})})]})]}),L(mv,{})]})})}fi.createRoot(document.getElementById("root")).render(L(Et.StrictMode,{children:L(bv,{})}));
