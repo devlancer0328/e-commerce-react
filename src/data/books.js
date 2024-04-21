@@ -1,17 +1,17 @@
-import book01 from './../assets/img/Book_01.jpg'
-import book02 from './../assets/img/Book_02.jpg'
-import book03 from './../assets/img/Book_03.jpg'
-import book04 from './../assets/img/Book_04.jpg'
-import book05 from './../assets/img/Book_05.jpg'
-import book06 from './../assets/img/Book_06.jpg'
-import book07 from './../assets/img/Book_07.jpg'
-import book08 from './../assets/img/Book_08.jpg'
-import book09 from './../assets/img/Book_09.jpg'
-import book10 from './../assets/img/Book_10.jpg'
-import book11 from './../assets/img/Book_11.jpg'
-import book12 from './../assets/img/Book_12.jpg'
+import book01 from './../assets/img/books/Book_01.jpg'
+import book02 from './../assets/img/books/Book_02.jpg'
+import book03 from './../assets/img/books/Book_03.jpg'
+import book04 from './../assets/img/books/Book_04.jpg'
+import book05 from './../assets/img/books/Book_05.jpg'
+import book06 from './../assets/img/books/Book_06.jpg'
+import book07 from './../assets/img/books/Book_07.jpg'
+import book08 from './../assets/img/books/Book_08.jpg'
+import book09 from './../assets/img/books/Book_09.jpg'
+import book10 from './../assets/img/books/Book_10.jpg'
+import book11 from './../assets/img/books/Book_11.jpg'
+import book12 from './../assets/img/books/Book_12.jpg'
 
-export const ITEMS = [
+export const BOOKS = [
     {
         id: 1,
         itemName: "JavaScript od podstaw",

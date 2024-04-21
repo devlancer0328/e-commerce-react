@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
-import { ITEMS } from "../../data/items";
+import { BOOKS } from "../../data/books";
 import { ItemCartView } from "../item/ItemCartView";
 import { CartContainer, Title, TotalSummaryContainer } from "./CartStyles";
 
@@ -20,7 +20,7 @@ export const Cart = () => {
   );
 
   // Calculate the total sum of summary prices
-  const totalSummaryPrice = ITEMS.reduce((acc, item) => {
+  const totalSummaryPrice = BOOKS.reduce((acc, item) => {
     if (cartItems.hasOwnProperty(item.id) && cartItems[item.id] !== 0) {
       const summaryPrice = calculateItemSummaryPrice(item);
       return acc + summaryPrice;
@@ -32,7 +32,7 @@ export const Cart = () => {
     <div className="wrapper cart">
       <Title>Cart</Title>
       <CartContainer>
-        {ITEMS.map((item) => {
+        {BOOKS.map((item) => {
           if (cartItems.hasOwnProperty(item.id) && cartItems[item.id] !== 0) {
             const summaryPrice = calculateItemSummaryPrice(item);
             return (

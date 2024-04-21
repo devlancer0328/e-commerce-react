@@ -1,6 +1,6 @@
 import React from "react";
 import { ShopTitle, ShopProducts } from "./ShopStyles";
-import { ITEMS } from "./../../data/items";
+import { BOOKS } from "../../data/books";
 import { Item } from "../item/Item";
 
 export const Shop = () => {
@@ -10,7 +10,7 @@ export const Shop = () => {
         <h1>Books</h1>
       </ShopTitle>
       <ShopProducts>
-        {ITEMS.map((item) => (
+        {BOOKS.map((item) => (
           <Item key={item.id} {...item} />
         ))}
       </ShopProducts>
