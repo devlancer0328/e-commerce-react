@@ -30,7 +30,7 @@ export const Cart = () => {
 
   return (
     <div className="wrapper cart">
-      <Title>Twój koszyk</Title>
+      <Title>Cart</Title>
       <CartContainer>
         {ITEMS.map((item) => {
           if (cartItems.hasOwnProperty(item.id) && cartItems[item.id] !== 0) {
