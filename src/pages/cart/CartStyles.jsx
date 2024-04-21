@@ -18,5 +18,11 @@ export const TotalSummaryContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  width: 100%;
+  width: max-content;
+  margin: 16px 0 16px auto;
+  border: 1px solid #ff0000;
+  padding: 12px;
+  p {
+    margin: 4px 0;
+  }
 `;

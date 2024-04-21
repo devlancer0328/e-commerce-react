@@ -8,6 +8,7 @@ import {
   HeaderLinksContainer,
   StyledLink,
   CounterItems,
+  CartButtonContainer,
 } from "./HeaderStyles";
 import { ShopContext } from "../../context/ShopContext";
 import BuyItLogo from "./../../assets/img/logo/BuyIT-logo-transparent.png";
@@ -24,10 +25,12 @@ export const Header = () => {
           </StyledLink>
         </LogoContainer>
         <HeaderLinksContainer>
-          <Link to="/e-commerce-react/cart">
-            <GrCart style={CartButton} />
-            <CounterItems>{totalQuantity}</CounterItems>
-          </Link>
+          <CartButtonContainer>
+            <Link to="/e-commerce-react/cart">
+              <GrCart style={CartButton} />
+              <CounterItems>{totalQuantity}</CounterItems>
+            </Link>
+          </CartButtonContainer>
         </HeaderLinksContainer>
       </HeaderBar>
     </HeaderContainer>

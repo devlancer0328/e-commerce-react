@@ -8,8 +8,10 @@ import {
   PriceCartContainer,
   ItemsCartCounter,
   RemoveFromTheCartBtnCart,
+  QuantityBox,
 } from "./ItemCartViewStyles";
 import { ShopContext } from "../../context/ShopContext";
+import { RiDeleteBin6Line } from "react-icons/ri";
 
 export const ItemCartView = ({
   id,
@@ -36,17 +38,15 @@ export const ItemCartView = ({
         </PriceCartContainer>
         <ItemsCartCounter
           onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
-          style={{
-            display: cartItems[id] === 0 ? "none" : "flex",
-            backgroundColor:
-              cartItems[id] > 0 ? "#bbbbbb" : "rgba(255,255,255,0)",
-          }}
         >
-          {cartItems[id]}
+          <QuantityBox>
+            <p>Quantity:</p>
+            {cartItems[id]}
+          </QuantityBox>
         </ItemsCartCounter>
       </TextCartContainer>
       <RemoveFromTheCartBtnCart onClick={() => removeItemFromCart(id)}>
-        Remove from the cart
+        <RiDeleteBin6Line />
       </RemoveFromTheCartBtnCart>
     </ItemCartContainer>
   );

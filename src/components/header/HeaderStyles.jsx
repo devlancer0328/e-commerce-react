@@ -15,6 +15,9 @@ export const HeaderBar = styled.div`
   width: 70vw;
   height: 60px;
   margin: 0 auto;
+  @media (max-width: 800px) {
+    width: 90vw;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -37,13 +40,17 @@ export const HeaderLinksContainer = styled.div`
 `;
 
 export const CounterItems = styled.div`
+  position: absolute;
+  top: -12px;
+  right: -20px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 13px;
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 20px;
+  padding-top: 2px;
   background: #bbbbbb;
   font-weight: 600;
   text-decoration: none;
@@ -51,4 +58,9 @@ export const CounterItems = styled.div`
   &:empty {
     display: none;
   }
+`;
+
+export const CartButtonContainer = styled.div`
+  position: relative;
+  margin-right: 20px;
 `;
