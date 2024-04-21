@@ -39,9 +39,6 @@ export const Item = ({ id, itemName, price, itemImage }) => {
         </ItemsCounter>
       </TextContainer>
       <AddToCartBtn onClick={() => addItemToCart(id)}>Add to cart</AddToCartBtn>
-      <RemoveFromTheCartBtn onClick={() => removeItemFromCart(id)}>
-        Remove from the cart
-      </RemoveFromTheCartBtn>
     </ItemContainer>
   );
 };
