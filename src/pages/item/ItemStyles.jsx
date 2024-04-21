@@ -105,48 +105,6 @@ export const AddToCartBtn = styled.button`
   }
 `;
 
-export const RemoveFromTheCartBtn = styled.button`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  width: 100%;
-  height: 40px;
-  z-index: 1;
-  border: none;
-  background-color: #ffffff;
-  color: #ff0000;
-  border: 2px solid #ff0000;
-  font-weight: 600;
-  -webkit-transition-duration: 0.6s;
-  transition-duration: 0.6s;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
-  &::after {
-    content: "";
-    background: #ffffffdb;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px !important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s;
-  }
-  &:active::after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s;
-  }
-  &:hover {
-    color: #000000;
-  }
-`;
-
 export const ItemsCounter = styled.div`
   display: flex;
   justify-content: center;
