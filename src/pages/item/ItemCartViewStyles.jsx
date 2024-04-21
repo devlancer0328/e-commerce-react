@@ -71,7 +71,7 @@ export const PriceCartContainer = styled.div`
   }
 `;
 
-export const RemoveFromTheCartBtnCart = styled.button`
+export const CartBtn = styled.button`
   position: relative;
   display: flex;
   justify-content: center;
@@ -144,4 +144,11 @@ export const QuantityBox = styled.div`
     font-weight: 400;
     margin: 0;
   }
+`;
+
+export const QuantityContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `;

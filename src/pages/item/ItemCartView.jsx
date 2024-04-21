@@ -7,11 +7,14 @@ import {
   NameCartContainer,
   PriceCartContainer,
   ItemsCartCounter,
-  RemoveFromTheCartBtnCart,
+  CartBtn,
   QuantityBox,
+  QuantityContainer,
 } from "./ItemCartViewStyles";
 import { ShopContext } from "../../context/ShopContext";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { AiOutlineMinus } from "react-icons/ai";
+import { AiOutlinePlus } from "react-icons/ai";
 
 export const ItemCartView = ({
   id,
@@ -20,7 +23,12 @@ export const ItemCartView = ({
   itemImage,
   summaryPrice,
 }) => {
-  const { cartItems, removeItemFromCart } = useContext(ShopContext);
+  const {
+    cartItems,
+    removeItemFromCart,
+    removeAllItemsFromCart,
+    addItemToCart,
+  } = useContext(ShopContext);
 
   return (
     <ItemCartContainer>
@@ -36,18 +44,26 @@ export const ItemCartView = ({
         <PriceCartContainer>
           Summary Price: <strong>${summaryPrice}</strong>
         </PriceCartContainer>
-        <ItemsCartCounter
-          onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
-        >
-          <QuantityBox>
-            <p>Quantity:</p>
-            {cartItems[id]}
-          </QuantityBox>
-        </ItemsCartCounter>
+        <QuantityContainer>
+          <CartBtn onClick={() => removeItemFromCart(id)}>
+            <AiOutlineMinus />
+          </CartBtn>
+          <ItemsCartCounter
+            onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
+          >
+            <QuantityBox>
+              <p>Quantity:</p>
+              {cartItems[id]}
+            </QuantityBox>
+          </ItemsCartCounter>
+          <CartBtn onClick={() => addItemToCart(id)}>
+            <AiOutlinePlus />
+          </CartBtn>
+        </QuantityContainer>
       </TextCartContainer>
-      <RemoveFromTheCartBtnCart onClick={() => removeItemFromCart(id)}>
+      <CartBtn onClick={() => removeAllItemsFromCart(id)}>
         <RiDeleteBin6Line />
-      </RemoveFromTheCartBtnCart>
+      </CartBtn>
     </ItemCartContainer>
   );
 };
