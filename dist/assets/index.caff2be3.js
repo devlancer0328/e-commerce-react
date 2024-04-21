@@ -148,7 +148,6 @@ Error generating stack: `+o.message+`
   justify-content: center;
   width: 200px;
   margin: 16px;
-  cursor: pointer;
   &:hover {
     box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
     -webkit-box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
