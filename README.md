@@ -38,13 +38,10 @@ Use `npm run deploy` to publish a newest version on production
 
 ## Screenshots
 
-- Desktop version :computer:
+- Desktop version :computer: & Mobile version :iphone:
 
-![Screenshot](./src/assets/screenshots/screenshot_desktop.png)
-
-- Mobile version :iphone:
-
-![Screenshot](./src/assets/screenshots/screenshot_mobile.png)
+![Screenshot](./src/assets/screenshots/screenshot01.jpg)
+![Screenshot](./src/assets/screenshots/screenshot02.jpg)
 
 ## Live :star2:
 
