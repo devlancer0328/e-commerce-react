@@ -10,6 +10,7 @@ import {
   CounterItems,
 } from "./HeaderStyles";
 import { ShopContext } from "../../context/ShopContext";
+import BuyItLogo from "./../../assets/img/logo/BuyIT-logo-transparent.png";
 
 export const Header = () => {
   const { totalQuantity } = useContext(ShopContext);
@@ -18,7 +19,9 @@ export const Header = () => {
     <HeaderContainer>
       <HeaderBar>
         <LogoContainer>
-          <StyledLink to="/e-commerce-react/">BuyIt</StyledLink>
+          <StyledLink to="/e-commerce-react/">
+            <img src={BuyItLogo} alt="BuyIt Logo" width={112} height={56} />
+          </StyledLink>
         </LogoContainer>
         <HeaderLinksContainer>
           <Link to="/e-commerce-react/cart">
