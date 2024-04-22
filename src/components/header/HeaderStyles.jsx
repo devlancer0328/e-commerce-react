@@ -77,6 +77,7 @@ export const CartButtonContainer = styled.div`
     svg {
       font-size: 24px;
       filter: invert(100%);
+      margin-left: 16px;
       &:hover {
         filter: unset !important;
       }
