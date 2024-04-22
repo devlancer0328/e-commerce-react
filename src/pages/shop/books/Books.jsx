@@ -1,9 +1,9 @@
 import React from "react";
-import { ShopTitle, ShopProducts } from "./ShopStyles";
-import { BOOKS } from "../../data/books";
-import { Item } from "../item/Item";
+import { ShopTitle, ShopProducts } from "./BooksStyles";
+import { BOOKS } from "../../../data/books";
+import { Item } from "../../item/Item";
 
-export const Shop = () => {
+export const Books = () => {
   return (
     <div className="wrapper shop">
       <ShopTitle>
