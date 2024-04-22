@@ -9,49 +9,49 @@ import ps5game08 from './../assets/img/games/ps5/ps5_game_08.jpg'
 
 export const PS5GAMES = [
     {
-        id: 1,
+        id: 201,
         itemName: "Game Sample Name",
         price: 145.00,
         itemImage: ps5game01,
     },
     {
-        id: 2,
+        id: 202,
         itemName: "Game Sample Name",
         price: 140.00,
         itemImage: ps5game02,
     },
     {
-        id: 3,
+        id: 203,
         itemName: "Game Sample Name",
         price: 140.00,
         itemImage: ps5game03,
     },
     {
-        id: 4,
+        id: 204,
         itemName: "Game Sample Name",
         price: 155.00,
         itemImage: ps5game04,
     },
     {
-        id: 5,
+        id: 205,
         itemName: "Game Sample Name",
         price: 154.99,
         itemImage: ps5game05,
     },
     {
-        id: 6,
+        id: 206,
         itemName: "Game Sample Name",
         price: 148.99,
         itemImage: ps5game06,
     },
     {
-        id: 7,
+        id: 207,
         itemName: "Game Sample Name",
         price: 199.99,
         itemImage: ps5game07,
     },
     {
-        id: 8,
+        id: 208,
         itemName: "Game Sample Name",
         price: 149.50,
         itemImage: ps5game08,
