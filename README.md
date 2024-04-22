@@ -31,6 +31,7 @@ Used technologies & tools:
 - React
 - styled-components
 - react-icons
+- react-router-dom
 
 ## Publishing production version
 
