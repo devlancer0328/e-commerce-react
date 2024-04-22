@@ -33,6 +33,16 @@ export const StyledLink = styled(Link)`
   color: #000000;
 `;
 
+export const WhiteLink = styled(Link)`
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 8px;
+  &:hover {
+    color: #000000;
+  }
+`;
+
 export const HeaderLinksContainer = styled.div`
   display: flex;
   flex-direction: row;
