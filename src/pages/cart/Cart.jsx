@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
 import { BOOKS } from "../../data/books";
+import { PS5GAMES } from "../../data/games";
 import { ItemCartView } from "../item/ItemCartView";
 import { CartContainer, Title, TotalSummaryContainer } from "./CartStyles";
 
@@ -28,6 +29,15 @@ export const Cart = () => {
     return acc;
   }, 0);
 
+  // Calculate the total sum of summary prices for PS5 games
+  const totalPS5GamesSummaryPrice = PS5GAMES.reduce((acc, item) => {
+    if (cartItems.hasOwnProperty(item.id) && cartItems[item.id] !== 0) {
+      const summaryPrice = calculateItemSummaryPrice(item);
+      return acc + summaryPrice;
+    }
+    return acc;
+  }, 0);
+
   return (
     <div className="wrapper cart">
       <Title>Cart</Title>
@@ -35,19 +45,42 @@ export const Cart = () => {
         {Object.keys(cartItems).length === 0 ? (
           <p>Your cart is empty</p>
         ) : (
-          BOOKS.map((item) => {
-            if (cartItems.hasOwnProperty(item.id) && cartItems[item.id] !== 0) {
-              const summaryPrice = calculateItemSummaryPrice(item);
-              return (
-                <ItemCartView
-                  key={item.id}
-                  {...item}
-                  summaryPrice={summaryPrice}
-                />
-              );
-            }
-            return null;
-          })
+          <>
+            {/* Render books */}
+            {BOOKS.map((item) => {
+              if (
+                cartItems.hasOwnProperty(item.id) &&
+                cartItems[item.id] !== 0
+              ) {
+                const summaryPrice = calculateItemSummaryPrice(item);
+                return (
+                  <ItemCartView
+                    key={item.id}
+                    {...item}
+                    summaryPrice={summaryPrice}
+                  />
+                );
+              }
+              return null;
+            })}
+            {/* Render PS5 games */}
+            {PS5GAMES.map((item) => {
+              if (
+                cartItems.hasOwnProperty(item.id) &&
+                cartItems[item.id] !== 0
+              ) {
+                const summaryPrice = calculateItemSummaryPrice(item);
+                return (
+                  <ItemCartView
+                    key={item.id}
+                    {...item}
+                    summaryPrice={summaryPrice}
+                  />
+                );
+              }
+              return null;
+            })}
+          </>
         )}
       </CartContainer>
       <TotalSummaryContainer>
