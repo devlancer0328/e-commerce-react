@@ -30,7 +30,7 @@ export const Header = () => {
           <WhiteLink to="/e-commerce-react/games">Games</WhiteLink>
           <CartButtonContainer>
             <Link to="/e-commerce-react/cart">
-              <GrCart style={CartButton} />
+              <GrCart />
               <CounterItems>{totalQuantity}</CounterItems>
             </Link>
           </CartButtonContainer>
@@ -38,9 +38,4 @@ export const Header = () => {
       </HeaderBar>
     </HeaderContainer>
   );
-};
-
-const CartButton = {
-  fontSize: "24px",
-  filter: "invert(100%)",
 };

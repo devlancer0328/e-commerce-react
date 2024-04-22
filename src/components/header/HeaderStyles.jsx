@@ -73,4 +73,13 @@ export const CounterItems = styled.div`
 export const CartButtonContainer = styled.div`
   position: relative;
   margin-right: 20px;
+  a {
+    svg {
+      font-size: 24px;
+      filter: invert(100%);
+      &:hover {
+        filter: unset !important;
+      }
+    }
+  }
 `;
