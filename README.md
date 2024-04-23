@@ -25,10 +25,10 @@ Project was created with:
 
 - Vite
 
-Used technologies & tools:
+Used technologies, tools & dependencies:
 
 - JavaScript
-- React
+- React.js
 - styled-components
 - react-icons
 - react-router-dom
