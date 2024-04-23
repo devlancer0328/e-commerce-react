@@ -6,12 +6,19 @@ export const SwiperHeroContainer = styled.div`
     height: auto;
     padding-bottom: 24px;
     .swiper-wrapper {
-      .swiper-slide {
+      a {
         display: flex;
         justify-content: center;
         user-select: none;
-        img {
-          height: auto;
+        width: 100%;
+        height: 100%;
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+          user-select: none;
+          img {
+            height: auto;
+          }
         }
       }
     }
