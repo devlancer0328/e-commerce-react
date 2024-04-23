@@ -20,8 +20,8 @@ export const Cart = () => {
     0
   );
 
-  // Calculate the total sum of summary prices
-  const totalSummaryPrice = BOOKS.reduce((acc, item) => {
+  // Calculate the total sum of summary prices for books
+  const totalBooksSummaryPrice = BOOKS.reduce((acc, item) => {
     if (cartItems.hasOwnProperty(item.id) && cartItems[item.id] !== 0) {
       const summaryPrice = calculateItemSummaryPrice(item);
       return acc + summaryPrice;
@@ -37,6 +37,10 @@ export const Cart = () => {
     }
     return acc;
   }, 0);
+
+  const totalSummaryPrice = (
+    totalBooksSummaryPrice + totalPS5GamesSummaryPrice
+  ).toFixed(2);
 
   return (
     <div className="wrapper cart">
@@ -57,7 +61,7 @@ export const Cart = () => {
                   <ItemCartView
                     key={item.id}
                     {...item}
-                    summaryPrice={summaryPrice}
+                    summaryPrice={summaryPrice.toFixed(2)}
                   />
                 );
               }
@@ -74,7 +78,7 @@ export const Cart = () => {
                   <ItemCartView
                     key={item.id}
                     {...item}
-                    summaryPrice={summaryPrice}
+                    summaryPrice={summaryPrice.toFixed(2)}
                   />
                 );
               }
