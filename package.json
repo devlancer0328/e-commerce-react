@@ -11,14 +11,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
-    "react-filter-search": "^1.1.11",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.1",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "swiper": "^11.1.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
