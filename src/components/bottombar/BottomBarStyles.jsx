@@ -13,6 +13,7 @@ export const BottomBarLinks = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 70vw;
+  max-width: 1240px;
   height: 40px;
   margin: 0 auto;
   @media (max-width: 800px) {

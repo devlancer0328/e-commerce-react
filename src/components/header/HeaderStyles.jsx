@@ -13,6 +13,7 @@ export const HeaderBar = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 70vw;
+  max-width: 1240px;
   height: 60px;
   margin: 0 auto;
   @media (max-width: 800px) {

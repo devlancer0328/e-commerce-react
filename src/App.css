@@ -10,6 +10,7 @@ body {
 .wrapper {
   width: 70vw;
   margin: 24px auto;
+  max-width: 1240px;
 }
 
 @media (max-width: 800px) {

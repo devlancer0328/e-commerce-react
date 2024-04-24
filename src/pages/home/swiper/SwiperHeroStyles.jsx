@@ -5,6 +5,7 @@ export const SwiperHeroContainer = styled.div`
   .swiper {
     height: auto !important;
     padding-bottom: 24px;
+    max-width: 1280px;
     .swiper-wrapper {
       a {
         display: flex;
