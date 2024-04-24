@@ -162,8 +162,17 @@ Error generating stack: `+l.message+`
     box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
     -webkit-box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
   }
+  @media (max-width: 800px) {
+    width: 40vw;
+    margin: 8px;
+  }
 `,$0=q.div`
   display: flex;
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+  }
 `,j0=q.div`
   position: absolute;
   display: flex;
