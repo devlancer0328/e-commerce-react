@@ -9,7 +9,6 @@ import {
   StyledLink,
   CounterItems,
   CartButtonContainer,
-  WhiteLink,
 } from "./HeaderStyles";
 import { ShopContext } from "../../context/ShopContext";
 import BuyItLogo from "./../../assets/img/logo/BuyIT-logo-transparent.png";
@@ -26,8 +25,6 @@ export const Header = () => {
           </StyledLink>
         </LogoContainer>
         <HeaderLinksContainer>
-          <WhiteLink to="/e-commerce-react/books">Books</WhiteLink>
-          <WhiteLink to="/e-commerce-react/games">Games</WhiteLink>
           <CartButtonContainer>
             <Link to="/e-commerce-react/cart">
               <GrCart />

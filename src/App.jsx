@@ -7,6 +7,7 @@ import { Games } from "./pages/shop/games/Games";
 import { Home } from "./pages/home/Home";
 import { Cart } from "./pages/cart/Cart";
 import { ShopContextProvider } from "./context/ShopContext";
+import { BottomBar } from "./components/bottombar/BottomBar";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ShopContextProvider>
         <Router>
           <Header />
+          <BottomBar />
           <Routes>
             <Route path="/e-commerce-react/" element={<Home />} />
             <Route path="/e-commerce-react/books" element={<Books />} />
