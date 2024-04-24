@@ -36,6 +36,9 @@ export const SwiperHeroContainer = styled.div`
   }
   @media (max-width: 800px) {
     .swiper {
+      margin-left: -8px;
+      margin-right: -8px;
+      width: calc(100% + 16px);
       .swiper-wrapper {
         .swiper-slide {
           img {
@@ -50,7 +53,7 @@ export const SwiperHeroContainer = styled.div`
         width: auto;
         padding: 8px;
         &::after {
-          font-size: 24px;
+          font-size: 28px;
         }
       }
     }
