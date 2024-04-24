@@ -11,10 +11,19 @@ export const ItemContainer = styled.div`
     box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
     -webkit-box-shadow: 0px 0px 24px -5px rgba(66, 68, 90, 1);
   }
+  @media (max-width: 800px) {
+    width: 40vw;
+    margin: 8px;
+  }
 `;
 
 export const ImageContainer = styled.div`
   display: flex;
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export const TextContainer = styled.div`
