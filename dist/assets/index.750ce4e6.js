@@ -84,6 +84,7 @@ Error generating stack: `+l.message+`
   justify-content: space-between;
   align-items: center;
   width: 70vw;
+  max-width: 1240px;
   height: 60px;
   margin: 0 auto;
   @media (max-width: 800px) {
@@ -295,6 +296,7 @@ Error generating stack: `+l.message+`
   .swiper {
     height: auto !important;
     padding-bottom: 24px;
+    max-width: 1240px;
     .swiper-wrapper {
       a {
         display: flex;
@@ -547,6 +549,7 @@ Error generating stack: `+l.message+`
   justify-content: flex-start;
   align-items: center;
   width: 70vw;
+  max-width: 1240px;
   height: 40px;
   margin: 0 auto;
   @media (max-width: 800px) {
