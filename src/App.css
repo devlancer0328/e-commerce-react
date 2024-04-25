@@ -19,3 +19,16 @@ body {
     margin: 8px;
   }
 }
+
+.item-cart-container-element.deleting {
+  animation: opacityDeleting 1s ease-in-out;
+}
+
+@keyframes opacityDeleting {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
