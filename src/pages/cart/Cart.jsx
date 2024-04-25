@@ -49,7 +49,7 @@ export const Cart = () => {
         {Object.keys(cartItems).length === 0 ? (
           <p>Your cart is empty</p>
         ) : (
-          <div>
+          <section>
             {/* Render books */}
             {BOOKS.map((item) => {
               if (
@@ -92,7 +92,7 @@ export const Cart = () => {
                 Total Summary Price: <strong>${totalSummaryPrice}</strong>
               </p>
             </TotalSummaryContainer>
-          </div>
+          </section>
         )}
       </CartContainer>
     </div>

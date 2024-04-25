@@ -11,6 +11,9 @@ export const CartContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  > section {
+    width: 100%;
+  }
 `;
 
 export const TotalSummaryContainer = styled.div`
