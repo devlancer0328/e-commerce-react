@@ -1,5 +1,5 @@
 import React from "react";
-import { ShopTitle, ShopProducts } from "./../../shop/games/GamesStyles";
+import { ShopTitle, ShopProducts } from "../../../pages/shop/games/GamesStyles";
 import { PS5GAMES } from "../../../data/games";
 import { ItemShop } from "../../item/ItemShop/ItemShop";
 import { SeoTextContainer } from "./SeoTextStyles";

@@ -1,7 +1,7 @@
 import React from "react";
 import { ShopTitle, ShopProducts } from "./BooksStyles";
 import { BOOKS } from "../../../data/books";
-import { ItemShop } from "../../item/ItemShop/ItemShop";
+import { ItemShop } from "../../../components/item/ItemShop/ItemShop";
 
 export const Books = () => {
   return (

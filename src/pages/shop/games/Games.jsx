@@ -1,7 +1,7 @@
 import React from "react";
 import { ShopTitle, ShopProducts } from "./GamesStyles";
 import { PS5GAMES } from "../../../data/games";
-import { ItemShop } from "../../item/ItemShop/ItemShop";
+import { ItemShop } from "../../../components/item/ItemShop/ItemShop";
 
 export const Games = () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
-import SwiperHero from "./swiper/SwiperHero";
+import SwiperHero from "./../../components/home/swiper/SwiperHero";
 import { Title } from "./HomeStyles";
-import { TopBooks } from "./top5/TopBooks";
-import { TopGames } from "./top5/TopGames";
+import { TopBooks } from "./../../components/home/top5/TopBooks";
+import { TopGames } from "./../../components/home/top5/TopGames";
 
 export const Home = () => {
   return (

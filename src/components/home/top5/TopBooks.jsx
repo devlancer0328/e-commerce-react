@@ -1,5 +1,8 @@
 import React from "react";
-import { ShopTitle, ShopProducts } from "./../../shop/books/BooksStyles";
+import {
+  ShopTitle,
+  ShopProducts,
+} from "./../../../pages/shop/books/BooksStyles";
 import { BOOKS } from "../../../data/books";
 import { ItemShop } from "../../item/ItemShop/ItemShop";
 import { SeoTextContainer } from "./SeoTextStyles";
