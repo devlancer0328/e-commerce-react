@@ -1,7 +1,7 @@
 import React from "react";
 import { ShopTitle, ShopProducts } from "./GamesStyles";
 import { PS5GAMES } from "../../../data/games";
-import { Item } from "../../item/Item";
+import { ItemShop } from "../../item/ItemShop/ItemShop";
 
 export const Games = () => {
   return (
@@ -11,7 +11,7 @@ export const Games = () => {
       </ShopTitle>
       <ShopProducts>
         {PS5GAMES.map((item) => (
-          <Item key={item.id} {...item} />
+          <ItemShop key={item.id} {...item} />
         ))}
       </ShopProducts>
     </div>

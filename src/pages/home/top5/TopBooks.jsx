@@ -1,7 +1,7 @@
 import React from "react";
 import { ShopTitle, ShopProducts } from "./../../shop/books/BooksStyles";
 import { BOOKS } from "../../../data/books";
-import { Item } from "../../item/Item";
+import { ItemShop } from "../../item/ItemShop/ItemShop";
 import { SeoTextContainer } from "./SeoTextStyles";
 
 export const TopBooks = () => {
@@ -15,7 +15,7 @@ export const TopBooks = () => {
       </ShopTitle>
       <ShopProducts>
         {randomFiveBooks.map((item) => (
-          <Item key={item.id} {...item} />
+          <ItemShop key={item.id} {...item} />
         ))}
       </ShopProducts>
       <SeoTextContainer>

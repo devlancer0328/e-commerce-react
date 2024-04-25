@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
 import { BOOKS } from "../../data/books";
 import { PS5GAMES } from "../../data/games";
-import { ItemCartView } from "../item/ItemCartView";
+import { ItemCartView } from "../item/ItemCart/ItemCartView";
 import { CartContainer, Title, TotalSummaryContainer } from "./CartStyles";
 
 export const Cart = () => {

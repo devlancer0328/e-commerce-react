@@ -11,7 +11,7 @@ import {
   QuantityBox,
   QuantityContainer,
 } from "./ItemCartViewStyles";
-import { ShopContext } from "../../context/ShopContext";
+import { ShopContext } from "../../../context/ShopContext";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { AiOutlineMinus } from "react-icons/ai";
 import { AiOutlinePlus } from "react-icons/ai";

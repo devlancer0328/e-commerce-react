@@ -8,10 +8,10 @@ import {
   PriceContainer,
   AddToCartBtn,
   ItemsCounter,
-} from "./ItemStyles";
-import { ShopContext } from "../../context/ShopContext";
+} from "./ItemShopStyles";
+import { ShopContext } from "../../../context/ShopContext";
 
-export const Item = ({ id, itemName, price, itemImage }) => {
+export const ItemShop = ({ id, itemName, price, itemImage }) => {
   const { addItemToCart, cartItems } = useContext(ShopContext);
 
   return (
