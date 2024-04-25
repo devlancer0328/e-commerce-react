@@ -49,7 +49,7 @@ export const Cart = () => {
         {Object.keys(cartItems).length === 0 ? (
           <p>Your cart is empty</p>
         ) : (
-          <>
+          <div>
             {/* Render books */}
             {BOOKS.map((item) => {
               if (
@@ -84,17 +84,17 @@ export const Cart = () => {
               }
               return null;
             })}
-          </>
+            <TotalSummaryContainer>
+              <p>
+                Total Quantity: <strong>{totalQuantity}</strong>
+              </p>
+              <p>
+                Total Summary Price: <strong>${totalSummaryPrice}</strong>
+              </p>
+            </TotalSummaryContainer>
+          </div>
         )}
       </CartContainer>
-      <TotalSummaryContainer>
-        <p>
-          Total Quantity: <strong>{totalQuantity}</strong>
-        </p>
-        <p>
-          Total Summary Price: <strong>${totalSummaryPrice}</strong>
-        </p>
-      </TotalSummaryContainer>
     </div>
   );
 };

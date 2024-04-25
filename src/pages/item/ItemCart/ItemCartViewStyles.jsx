@@ -10,6 +10,7 @@ export const ItemCartContainer = styled.div`
   border: 1px solid #ff0000;
   padding: 16px;
   margin: 8px 0;
+  box-sizing: border-box;
   @media (max-width: 800px) {
     flex-direction: column;
   }
