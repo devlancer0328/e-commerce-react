@@ -13,6 +13,8 @@ import { SwiperHeroContainer } from "./SwiperHeroStyles";
 import banner01 from "./../../../assets/img/home/hero_swiper/banner01.jpg";
 import banner02 from "./../../../assets/img/home/hero_swiper/banner02.jpg";
 import banner03 from "./../../../assets/img/home/hero_swiper/banner03.jpg";
+import banner04 from "./../../../assets/img/home/hero_swiper/banner04.jpg";
+import banner05 from "./../../../assets/img/home/hero_swiper/banner05.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -44,13 +46,23 @@ const SwiperHero = () => {
           </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <Link to="/e-commerce-react/games">
+          <Link to="/e-commerce-react/books">
             <img src={banner02} alt="banner" width={800} height={400} />
           </Link>
         </SwiperSlide>
         <SwiperSlide>
           <Link to="/e-commerce-react/games">
             <img src={banner03} alt="banner" width={800} height={400} />
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link to="/e-commerce-react/games">
+            <img src={banner04} alt="banner" width={800} height={400} />
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link to="/e-commerce-react/books">
+            <img src={banner05} alt="banner" width={800} height={400} />
           </Link>
         </SwiperSlide>
       </Swiper>
