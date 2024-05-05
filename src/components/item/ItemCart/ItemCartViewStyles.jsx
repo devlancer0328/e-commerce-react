@@ -18,6 +18,9 @@ export const ItemCartContainer = styled.div`
 
 export const ImageCartContainer = styled.div`
   display: flex;
+  img {
+    height: auto;
+  }
 `;
 
 export const TextCartContainer = styled.div`
