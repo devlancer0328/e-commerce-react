@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as HashRouter, Routes, Route } from "react-router-dom";
 import { Header } from "./components/header/Header";
 import { Footer } from "./components/footer/Footer";
 import { Books } from "./pages/shop/books/Books";
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="app-container">
       <ShopContextProvider>
-        <Router>
+        <HashRouter>
           <Header />
           <BottomBar />
           <Routes>
@@ -24,7 +24,7 @@ function App() {
             <Route path="/e-commerce-react/t-shirts" element={<Tshirts />} />
             <Route path="/e-commerce-react/cart" element={<Cart />} />
           </Routes>
-        </Router>
+        </HashRouter>
         <Footer />
       </ShopContextProvider>
     </div>
