@@ -14,7 +14,7 @@ export const TopTshirts = () => {
   return (
     <div className="wrapper">
       <ShopTitle>
-        <h1>Top 5 Tshirts</h1>
+        <h1>Top 5 T-shirts</h1>
       </ShopTitle>
       <ShopProducts>
         {randomFiveTshirts.map((item) => (
