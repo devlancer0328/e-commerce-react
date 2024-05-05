@@ -46,4 +46,4 @@ Use `npm run deploy` to publish a newest version on production
 
 ## Live :star2:
 
-https://goldipl.github.io/e-commerce-react/
+https://goldipl.github.io/e-commerce-react/#/e-commerce-react/
