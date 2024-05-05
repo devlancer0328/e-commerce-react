@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
 import { BOOKS } from "../../data/books";
 import { PS5GAMES } from "../../data/games";
+import { TSHIRTS } from "../../data/tshirts";
 import { ItemCartView } from "../../components/item/ItemCart/ItemCartView";
 import { CartContainer, Title, TotalSummaryContainer } from "./CartStyles";
 
@@ -38,8 +39,19 @@ export const Cart = () => {
     return acc;
   }, 0);
 
+  // Calculate the total sum of summary prices for T-shirts
+  const totalTshirtsSummaryPrice = TSHIRTS.reduce((acc, item) => {
+    if (cartItems.hasOwnProperty(item.id) && cartItems[item.id] !== 0) {
+      const summaryPrice = calculateItemSummaryPrice(item);
+      return acc + summaryPrice;
+    }
+    return acc;
+  }, 0);
+
   const totalSummaryPrice = (
-    totalBooksSummaryPrice + totalPS5GamesSummaryPrice
+    totalBooksSummaryPrice +
+    totalPS5GamesSummaryPrice +
+    totalTshirtsSummaryPrice
   ).toFixed(2);
 
   return (
@@ -69,6 +81,23 @@ export const Cart = () => {
             })}
             {/* Render PS5 games */}
             {PS5GAMES.map((item) => {
+              if (
+                cartItems.hasOwnProperty(item.id) &&
+                cartItems[item.id] !== 0
+              ) {
+                const summaryPrice = calculateItemSummaryPrice(item);
+                return (
+                  <ItemCartView
+                    key={item.id}
+                    {...item}
+                    summaryPrice={summaryPrice.toFixed(2)}
+                  />
+                );
+              }
+              return null;
+            })}
+            {/* Render T-shirts */}
+            {TSHIRTS.map((item) => {
               if (
                 cartItems.hasOwnProperty(item.id) &&
                 cartItems[item.id] !== 0
