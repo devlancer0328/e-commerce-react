@@ -3,7 +3,7 @@ import { ShopTitle, ShopProducts } from "./TshirtsStyles";
 import { TSHIRTS } from "../../../data/tshirts";
 import { ItemShop } from "../../../components/item/ItemShop/ItemShop";
 
-export const Books = () => {
+export const Tshirts = () => {
   return (
     <div className="wrapper shop">
       <ShopTitle>

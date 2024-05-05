@@ -11,6 +11,7 @@ export const BottomBar = () => {
       <BottomBarLinks>
         <BlackLink to="/e-commerce-react/books">Books</BlackLink>
         <BlackLink to="/e-commerce-react/games">Games</BlackLink>
+        <BlackLink to="/e-commerce-react/t-shirts">T-shirts</BlackLink>
       </BottomBarLinks>
     </BottomBarContainer>
   );
